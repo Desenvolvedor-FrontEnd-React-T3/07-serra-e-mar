@@ -1,13 +1,15 @@
 import "./App.css";
-import Header from "./components/organisms/Header";
 
+import Header from "./components/organisms/Header";
 import Hero from "./components/organisms/Hero";
+import TripList from "./components/organisms/TripList";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
+      <TripList />
     </>
   );
 }
