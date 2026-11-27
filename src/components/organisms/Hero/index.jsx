@@ -1,13 +1,23 @@
-import "./hero.css";
+import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <section className="hero">
-      <div className="content">
-        <h1 className="title">Serra ou mar? Escolha seu próximo passeio</h1>
-        <p className="subtitle">
-          Passeios guiados pelos cantos mais bonitos de Santa Catarina
-        </p>
+    <section className={styles.hero}>
+      <div className={styles.content}>
+        <div className={styles.text}>
+          <h1 className={styles.title}>
+            Serra ou mar? Escolha seu próximo passeio
+          </h1>
+          <p className={styles.subtitle}>
+            Passeios guiados pelos cantos mais bonitos de Santa Catarina
+          </p>
+        </div>
+
+        <img
+          className={styles.image}
+          src="/images/serra-e-mar.svg"
+          alt="Montanhas com neve no topo, mar logo abaixo e céu sem nuvens com o sol"
+        />
       </div>
     </section>
   );
