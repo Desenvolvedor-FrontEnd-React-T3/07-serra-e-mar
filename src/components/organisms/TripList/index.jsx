@@ -25,7 +25,9 @@ export default function TripList() {
         ))}
       </div>
 
-      {selected != null && <BookingDialog />}
+      {selected != null && (
+        <BookingDialog trip={selected} onClose={() => setSelected(null)} />
+      )}
     </section>
   );
 }
